@@ -1,1 +1,157 @@
-# chess
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 160px;
+	border: 1px black solid;
+	margin: 0 auto;
+}
+
+.flex-item {
+	width: 20px;
+	height: 20px;
+	border: 1px black solid;
+}
+</style>
+<script>
+function allowDrop(ev) {
+	ev.preventDefault();
+}
+
+function drag(ev) {
+	ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+	ev.preventDefault();
+	var data = ev.dataTransfer.getData("text");
+	ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<p>Drag the W3Schools image into the rectangle:</p>
+<div class="flex-container" width=600 height=600>
+<div class="flex-item" id="dev1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+<div class="flex-container" width=600 height=600>
+<div class="flex-item" id="dev11" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev12" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev13" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev14" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev15" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev16" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev17" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev18" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+<div class="flex-container" width=600 height=600>
+<div class="flex-item" id="dev19" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev20" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev21" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev22" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev23" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev24" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev25" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev26" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+<div class="flex-container" width=600 height=600>
+<div class="flex-item" id="dev27" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev28" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev29" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev30" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev31" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev32" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev33" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev34" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+<div class="flex-container" width=600 height=600>
+<div class="flex-item" id="dev35" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev36" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev37" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev38" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev39" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="div40" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev41" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev42" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+<div class="flex-container" width=600 height=600>
+<div class="flex-item" id="dev43" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev44" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev45" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev46" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev47" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev48" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev49" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev50" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+<div class="flex-container" width=600 height=600>
+<div class="flex-item" id="dev51" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev52" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev53" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev54" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev55" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev56" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev57" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev58" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+<div class="flex-container" width=600 height=600>
+<div class="flex-item" id="dev59" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev60" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev61" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev62" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev63" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev64" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev65" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="flex-item" id="dev66" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+<br>
+<div class="flex-container" style="width:300px">
+<div id="drag1" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9812;</div>
+<div id="drag2" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9813;</div>
+<div id="drag3" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9814;</div>
+<div id="drag4" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9814;</div>
+<div id="drag5" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9815;</div>
+<div id="drag6" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9815;</div>
+<div id="drag7" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9816;</div>
+<div id="drag8" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9816;</div>
+<div id="drag9" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9817;</div>
+<div id="drag10" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9817;</div>
+<div id="drag11" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9817;</div>
+<div id="drag12" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9817;</div>
+<div id="drag13" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9817;</div>
+<div id="drag14" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9817;</div>
+<div id="drag15" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9817;</div>
+<div id="drag16" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9817;</div>
+</div>
+<div class="flex-container" style="width:300px">
+<div id="drag17" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9818;</div>
+<div id="drag18" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9819;</div>
+<div id="drag19" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9820;</div>
+<div id="drag20" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9820;</div>
+<div id="drag21" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9821;</div>
+<div id="drag22" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9821;</div>
+<div id="drag23" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9822;</div>
+<div id="drag24" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9822;</div>
+<div id="drag25" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9823;</div>
+<div id="drag26" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9823;</div>
+<div id="drag27" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9823;</div>
+<div id="drag28" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9823;</div>
+<div id="drag29" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9823;</div>
+<div id="drag30" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9823;</div>
+<div id="drag31" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9823;</div>
+<div id="drag32" draggable="true" ondragstart="drag(event)" width="30" height="30">&#9823;</div>
+</div>
+</body>
+</html>
